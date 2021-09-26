@@ -19,6 +19,7 @@ export const NavBar: React.FC<INavbarProps> = ({ links, logo }) => {
                          ))}
                     </ul>
                </div>
+               <button className=""></button>
           </nav>
      );
 };
