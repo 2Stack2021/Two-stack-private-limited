@@ -17,37 +17,6 @@ export const NavBar: React.FC<INavbarProps> = ({ links, logo }) => {
                                    </li>
                               </a>
                          ))}
-                         <a href="#home">
-                              <li className="text-primary-500 text-md mr-5 uppercase font-semibold">
-                                   Home
-                              </li>
-                         </a>
-                         <a href="#techs">
-                              <li className="text-primary-500 text-md mr-5 uppercase font-semibold">
-                                   Tech stack
-                              </li>
-                         </a>
-                         <a href="#technologies">
-                              <li className="text-primary-500 text-md mr-5 uppercase font-semibold">
-                                   Technologies
-                              </li>
-                         </a>
-                         <a href="#Indus">
-                              <li className="text-primary-500 text-md mr-5 uppercase font-semibold">
-                                   Industries
-                              </li>
-                         </a>
-
-                         <a href="#shadow">
-                              <li className="text-primary-500 text-md mr-5 uppercase font-semibold">
-                                   Showcase
-                              </li>
-                         </a>
-                         <a href="#contact">
-                              <li className="text-primary-500 text-md rounded-md uppercase bg-primary-100 p-2">
-                                   Contact us
-                              </li>
-                         </a>
                     </ul>
                </div>
           </nav>
