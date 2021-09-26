@@ -53,7 +53,7 @@ const Home: NextPage = () => {
                     {/* First Section */}
                     <section
                          id="home"
-                         className="lg:h-screen px-3 border-primary-500 flex flex-row justify-center items-center"
+                         className="h-screen px-3 border-primary-500 flex flex-row justify-center items-center"
                     >
                          <div className="container mx-auto grid lg:grid-row-2 gap-10 flex-col-reverse">
                               <div>
