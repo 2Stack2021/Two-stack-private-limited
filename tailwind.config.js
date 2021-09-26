@@ -11,6 +11,10 @@ module.exports = {
                colors: {
                     primary: colors.indigo,
                     secondary: colors.blue,
+                    text: "#1F3545",
+               },
+               fontFamily: {
+                    nunito: ["nunito", "sans-serif"],
                },
           },
      },
