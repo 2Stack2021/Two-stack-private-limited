@@ -17,7 +17,13 @@ import {
      Tranvel,
      Web,
 } from "../components/";
+import Image from "next/image";
 import Logo from "../public/logo/favicon.png";
+import Location from "../public/png/place.png";
+import Email from "../public/png/email.png";
+import Phone from "../public/png/phone.png";
+import Instagram from "../public/png/instagram.png";
+import Facebook from "../public/png/facebook.png";
 
 const Home: NextPage = () => {
      return (
@@ -31,9 +37,9 @@ const Home: NextPage = () => {
                               title: "Tech Stack",
                          },
                          {
-                              id: "#technologies",
-                              name: "technologies",
-                              title: "Technologies",
+                              id: "#features",
+                              name: "features",
+                              title: "features",
                          },
                          {
                               id: "#industries",
@@ -67,13 +73,12 @@ const Home: NextPage = () => {
                                              </span>
                                         </div>
                                         <div className="my-3 w-full">
-                                             <span className="text-gray-400">
-                                                  Lorem ipsum dolor, sit amet
-                                                  consectetur adipisicing elit.
-                                                  Nostrum tempora tenetur illo
-                                                  itaque, rem beatae voluptatum
-                                                  repellendus earum asperiores
-                                                  at!
+                                             <span className="text-gray-800 font-semibold text-md">
+                                                  Your partner for incredible
+                                                  mobile and web products,
+                                                  finally in great
+                                                  <br />
+                                                  quality and on time.
                                              </span>
                                         </div>
                                    </div>
@@ -83,11 +88,16 @@ const Home: NextPage = () => {
                                                   Request an estimation
                                              </span>
                                         </button>
-                                        <button className="p-2 group bg-primary-500 hover:bg-primary-100 rounded-md transition-colors duration-500">
-                                             <span className="group-hover:text-primary-500 text-white text-sm font-semibold capitalize font-nunito">
-                                                  Schedule a call
-                                             </span>
-                                        </button>
+                                        <a
+                                             href="#contact"
+                                             className="p-2 group bg-primary-500 text-white hover:bg-primary-400 hover:text-white rounded-md transition-colors duration-500"
+                                        >
+                                             <button>
+                                                  <span className="group-hover:text-white text-sm font-semibold capitalize font-nunito">
+                                                       Schedule a call
+                                                  </span>
+                                             </button>
+                                        </a>
                                    </div>
                               </div>
                          </div>
@@ -122,12 +132,11 @@ const Home: NextPage = () => {
                                                             Mongo DB
                                                        </span>
                                                        <p className="mt-2 text-gray-500">
-                                                            Lorem ipsum dolor
-                                                            sit amet consectetur
-                                                            adipisicing elit.
-                                                            Ullam nobis est amet
-                                                            cum error.
-                                                            Recusandae.
+                                                            MongoDB is a
+                                                            source-available
+                                                            cross-platform
+                                                            document-oriented
+                                                            database program.
                                                        </p>
                                                   </div>
                                              </div>
@@ -149,12 +158,12 @@ const Home: NextPage = () => {
                                                             Node
                                                        </span>
                                                        <p className="mt-2 text-gray-500">
-                                                            Lorem ipsum dolor
-                                                            sit amet consectetur
-                                                            adipisicing elit.
-                                                            Ullam nobis est amet
-                                                            cum error.
-                                                            Recusandae.
+                                                            Node.js is
+                                                            open-source,
+                                                            cross-platform,
+                                                            back-end runtime
+                                                            environment web
+                                                            browser.
                                                        </p>
                                                   </div>
                                              </div>
@@ -173,15 +182,13 @@ const Home: NextPage = () => {
                                                             Frontend
                                                        </div>
                                                        <span className="block mt-1 text-xl leading-tight font-medium text-black hover:underline">
-                                                            Node
+                                                            React
                                                        </span>
                                                        <p className="mt-2 text-gray-500">
-                                                            Lorem ipsum dolor
-                                                            sit amet consectetur
-                                                            adipisicing elit.
-                                                            Ullam nobis est amet
-                                                            cum error.
-                                                            Recusandae.
+                                                            React is open-source
+                                                            front-end library
+                                                            for building UI
+                                                            components.
                                                        </p>
                                                   </div>
                                              </div>
@@ -203,12 +210,11 @@ const Home: NextPage = () => {
                                                             Express
                                                        </span>
                                                        <p className="mt-2 text-gray-500">
-                                                            Lorem ipsum dolor
-                                                            sit amet consectetur
-                                                            adipisicing elit.
-                                                            Ullam nobis est amet
-                                                            cum error.
-                                                            Recusandae.
+                                                            simply Express, is a
+                                                            back end web
+                                                            application
+                                                            framework for
+                                                            Node.js.
                                                        </p>
                                                   </div>
                                              </div>
@@ -230,12 +236,11 @@ const Home: NextPage = () => {
                                                             Github
                                                        </span>
                                                        <p className="mt-2 text-gray-500">
-                                                            Lorem ipsum dolor
-                                                            sit amet consectetur
-                                                            adipisicing elit.
-                                                            Ullam nobis est amet
-                                                            cum error.
-                                                            Recusandae.
+                                                            GitHub is a provider
+                                                            of Internet hosting
+                                                            for development and
+                                                            version control
+                                                            using Git.
                                                        </p>
                                                   </div>
                                              </div>
@@ -244,7 +249,7 @@ const Home: NextPage = () => {
                                              <div className="md:flex items-center">
                                                   <div className="md:flex-shrink-0 relative lg:h-48 lg:w-48">
                                                        <img
-                                                            className={`h-52 w-full object-contain md:h-full md:w-52`}
+                                                            className={`h-48 w-full object-contain md:h-full md:w-48`}
                                                             src="tech-stack/typescript.png"
                                                             alt="react"
                                                        />
@@ -257,12 +262,11 @@ const Home: NextPage = () => {
                                                             Typescript
                                                        </span>
                                                        <p className="mt-2 text-gray-500">
-                                                            Lorem ipsum dolor
-                                                            sit amet consectetur
-                                                            adipisicing elit.
-                                                            Ullam nobis est amet
-                                                            cum error.
-                                                            Recusandae.
+                                                            TypeScript is a
+                                                            programming language
+                                                            developed and
+                                                            maintained by
+                                                            Microsoft.
                                                        </p>
                                                   </div>
                                              </div>
@@ -273,7 +277,7 @@ const Home: NextPage = () => {
                     </section>
                     {/* Third Section */}
                     <section
-                         id="technologies"
+                         id="features"
                          className="lg:h-screen mt-10 px-3 border-primary-500 flex flex-row items-center"
                     >
                          <div className="container mx-auto">
@@ -297,10 +301,12 @@ const Home: NextPage = () => {
                                                        Automation
                                                   </div>
                                                   <p className="mt-2 text-gray-500">
-                                                       Lorem ipsum dolor sit
-                                                       amet consectetur
-                                                       adipisicing elit. Ratione
-                                                       amet tempora ad voluptas?
+                                                       also known as business
+                                                       automation or digital
+                                                       transformation, is the
+                                                       technology-enabled
+                                                       automation of complex
+                                                       business processes.
                                                   </p>
                                              </div>
                                         </div>
@@ -319,10 +325,14 @@ const Home: NextPage = () => {
                                                        Design
                                                   </div>
                                                   <p className="mt-2 text-gray-500">
-                                                       Lorem ipsum dolor sit
-                                                       amet consectetur
-                                                       adipisicing elit. Ratione
-                                                       amet tempora ad voluptas?
+                                                       Once the product vision
+                                                       is defined, product
+                                                       research. Once the
+                                                       product vision is
+                                                       defined, product research
+                                                       provides the other half
+                                                       of the foundation for
+                                                       great design.
                                                   </p>
                                              </div>
                                         </div>
@@ -341,10 +351,11 @@ const Home: NextPage = () => {
                                                        for B2B and B2C
                                                   </div>
                                                   <p className="mt-2 text-gray-500">
-                                                       Lorem ipsum dolor sit
-                                                       amet consectetur
-                                                       adipisicing elit. Ratione
-                                                       amet tempora ad voluptas?
+                                                       B2B and B2C use different
+                                                       business models. B2B apps
+                                                       often offer a
+                                                       subscription service to
+                                                       the organization.
                                                   </p>
                                              </div>
                                         </div>
@@ -363,10 +374,11 @@ const Home: NextPage = () => {
                                                        Modernization
                                                   </div>
                                                   <p className="mt-2 text-gray-500">
-                                                       Lorem ipsum dolor sit
-                                                       amet consectetur
-                                                       adipisicing elit. Ratione
-                                                       amet tempora ad voluptas?
+                                                       Legacy modernization is
+                                                       the process of updating
+                                                       and optimizing business
+                                                       systems to gain
+                                                       operational efficiencies
                                                   </p>
                                              </div>
                                         </div>
@@ -384,10 +396,10 @@ const Home: NextPage = () => {
                                                        Integrations
                                                   </div>
                                                   <p className="mt-2 text-gray-500">
-                                                       Lorem ipsum dolor sit
-                                                       amet consectetur
-                                                       adipisicing elit. Ratione
-                                                       amet tempora ad voluptas?
+                                                       System integration is
+                                                       defined in engineering as
+                                                       the process of bringing
+                                                       togethe
                                                   </p>
                                              </div>
                                         </div>
@@ -405,10 +417,11 @@ const Home: NextPage = () => {
                                                        Scaling product delivery
                                                   </div>
                                                   <p className="mt-2 text-gray-500">
-                                                       Lorem ipsum dolor sit
-                                                       amet consectetur
-                                                       adipisicing elit. Ratione
-                                                       amet tempora ad voluptas?
+                                                       Scaling is about ensuring
+                                                       that product is robust
+                                                       enough to survive and
+                                                       then thrive in that
+                                                       market.
                                                   </p>
                                              </div>
                                         </div>
@@ -513,10 +526,10 @@ const Home: NextPage = () => {
                                         Showcases
                                    </span>
                               </div>
-                              <div className="lg:grid lg:grid-cols-2 bg-primary-100 p-3 my-3">
+                              <div className="lg:grid lg:grid-cols-2 bg-gradient-to-r from-primary-50 to-white  p-3 my-3">
                                    <div className="lg:flex-1 ">
                                         <div>
-                                             <span className="text-md text-text font-semibold">
+                                             <span className="text-md uppercase  text-text font-semibold">
                                                   Construction
                                              </span>
                                         </div>
@@ -525,15 +538,14 @@ const Home: NextPage = () => {
                                                   Jeydeep stone art (Surat)
                                              </span>
                                         </div>
-                                        <div>
-                                             <span className="text-gray-400">
-                                                  Lorem ipsum dolor sit amet
-                                                  consectetur adipisicing elit.
-                                                  Delectus, autem quia
-                                                  asperiores ab voluptatum
-                                                  libero vitae quasi, dolor
-                                                  consequuntur, numquam illum
-                                                  quod totam iste sint!
+                                        <div className="my-3">
+                                             <span className="text-gray-800 font-semibold">
+                                                  Jaydeep stone art is a
+                                                  construction agancy, surat
+                                                  based this agancy's website is
+                                                  made by us, this is static
+                                                  website and uploaded on the on
+                                                  time delivery.
                                              </span>
                                         </div>
                                         <div>
@@ -554,7 +566,7 @@ const Home: NextPage = () => {
                                         </div>
                                    </div>
                               </div>
-                              <div className="lg:grid lg:grid-cols-2 bg-primary-100 p-3 my-3">
+                              <div className="lg:grid lg:grid-cols-2 my-5 bg-gradient-to-r from-white to-primary-50 p-3 my-3">
                                    <div className="lg:flex-1">
                                         <div className="relative h-full w-full">
                                              <img
@@ -565,7 +577,7 @@ const Home: NextPage = () => {
                                    </div>
                                    <div className="lg:flex-1 ">
                                         <div>
-                                             <span className="text-md text-text font-semibold">
+                                             <span className="text-md uppercase text-text font-semibold">
                                                   Construction
                                              </span>
                                         </div>
@@ -574,15 +586,14 @@ const Home: NextPage = () => {
                                                   Pooja Construction (Surat)
                                              </span>
                                         </div>
-                                        <div>
-                                             <span className="text-gray-400">
-                                                  Lorem ipsum dolor sit amet
-                                                  consectetur adipisicing elit.
-                                                  Delectus, autem quia
-                                                  asperiores ab voluptatum
-                                                  libero vitae quasi, dolor
-                                                  consequuntur, numquam illum
-                                                  quod totam iste sint!
+                                        <div className="my-3">
+                                             <span className="text-gray-800 font-semibold">
+                                                  Pooja construction is a
+                                                  construction agancy, surat
+                                                  based this agancy's website is
+                                                  made by us, this is static
+                                                  website and uploaded on the on
+                                                  time delivery.
                                              </span>
                                         </div>
                                         <div>
@@ -595,10 +606,10 @@ const Home: NextPage = () => {
                                         </div>
                                    </div>
                               </div>
-                              <div className="lg:grid lg:grid-cols-2 bg-primary-100 p-3 my-3">
+                              <div className="lg:grid lg:grid-cols-2 bg-gradient-to-r from-primary-50 to-white  p-3 my-3">
                                    <div className="lg:flex-1 ">
                                         <div>
-                                             <span className="text-md text-text font-semibold">
+                                             <span className="text-md uppercase  text-text font-semibold">
                                                   Shop website
                                              </span>
                                         </div>
@@ -607,15 +618,16 @@ const Home: NextPage = () => {
                                                   Om Lite (Mumbai)
                                              </span>
                                         </div>
-                                        <div>
-                                             <span className="text-gray-400">
-                                                  Lorem ipsum dolor sit amet
-                                                  consectetur adipisicing elit.
-                                                  Delectus, autem quia
-                                                  asperiores ab voluptatum
-                                                  libero vitae quasi, dolor
-                                                  consequuntur, numquam illum
-                                                  quod totam iste sint!
+                                        <div className="my-3">
+                                             <span className="text-gray-800 font-semibold">
+                                                  Omlite is a mumbai based LED
+                                                  lights showroom which is
+                                                  managed by their admin, and
+                                                  currently they are using this
+                                                  website for advertisement of
+                                                  their product and share thier
+                                                  products information on this
+                                                  website.
                                              </span>
                                         </div>
                                         <div>
@@ -644,95 +656,102 @@ const Home: NextPage = () => {
                          className="mt-10 lg:h-screen flex flex-row justify-center items-center"
                     >
                          <div className="container mx-auto px-3">
-                              <div className="lg:grid lg:grid-cols-2 gap-5">
-                                   <div className="mt-5">
-                                        <span className="text-5xl text-primary-500 font-semibold">
-                                             Need more details?
-                                        </span>
-                                        <div className="mt-5">
-                                             <span className="text-md text-gray-400">
-                                                  Address :-
-                                                  <address>
-                                                       C002, Devi Park,
-                                                       Nr.saraswati school,
-                                                       saianath nagar,
-                                                       nallasopara(E) - 401209.
-                                                  </address>
+                              <div className="lg:grid lg:grid-cols-2 gap-5 justify-center items-center">
+                                   <div className="mt-5 p-3 flex-1">
+                                        <div className="mb-5">
+                                             <span className="text-4xl font-semibold font-nunito">
+                                                  Get in touch
                                              </span>
                                         </div>
-                                        <div className="mt-5">
-                                             <span className="text-md text-gray-400">
-                                                  Social Links :-
-                                             </span>
-                                             <div>
-                                                  <span className="font-bold text-md text-primary-500">
-                                                       Phone :-
-                                                  </span>{" "}
-                                                  <span>+91 7373080890</span>
+                                        <div className="my-5">
+                                             <div className="flex flex-row items-center">
+                                                  <Image
+                                                       src={Location}
+                                                       height={25}
+                                                       width={25}
+                                                       alt="Location"
+                                                  />
+                                                  <div>
+                                                       <span className="text-sm ml-3 text-gray-400 font-semibold">
+                                                            C-002, Devi
+                                                            park,sainsath nagar,
+                                                            nr.saraswati school,
+                                                            nallasopara(E) -
+                                                            401209
+                                                       </span>
+                                                  </div>
                                              </div>
-                                             <div>
-                                                  <span className="font-bold text-md text-primary-500">
-                                                       Email :-
-                                                  </span>{" "}
-                                                  <span>
-                                                       2twostack@gmail.com
-                                                  </span>
+                                             <div className="flex flex-row items-center my-3">
+                                                  <Image
+                                                       src={Email}
+                                                       height={25}
+                                                       width={25}
+                                                       alt="Location"
+                                                  />
+                                                  <div>
+                                                       <span className="text-sm ml-3 text-gray-400 font-semibold">
+                                                            2TWOSTACK@GMAIL.COM
+                                                       </span>
+                                                  </div>
                                              </div>
-                                             <div>
-                                                  <span className="font-bold text-md text-primary-500">
-                                                       Facebook :-
-                                                  </span>
-                                                  <span>www.facebook.com</span>
+                                             <div className="flex  mt-2  flex-row items-center font-semibold">
+                                                  <Image
+                                                       src={Phone}
+                                                       height={25}
+                                                       width={25}
+                                                       alt="Location"
+                                                  />
+                                                  <div>
+                                                       <a href="/tel:+918460763606">
+                                                            <span className="text-sm ml-3 text-gray-400 font-semibold">
+                                                                 +91 7373080890
+                                                            </span>
+                                                       </a>
+                                                  </div>
                                              </div>
-                                             <div>
-                                                  <span className="font-bold text-md text-primary-500">
-                                                       Instagram :-
-                                                  </span>
-                                                  <span>www.instagram.com</span>
+                                             <div className="flex mt-2 flex-row items-center font-semibold">
+                                                  <Image
+                                                       src={Instagram}
+                                                       height={24}
+                                                       width={24}
+                                                  />
+                                                  <div>
+                                                       <a href="https://www.instagram.com/twostack2021/">
+                                                            <span className="text-sm ml-3 text-gray-400 font-semibold">
+                                                                 Instagram
+                                                            </span>
+                                                       </a>
+                                                  </div>
                                              </div>
-
-                                             <div>
-                                                  <span className="font-bold text-md text-primary-500">
-                                                       Twitter :-
-                                                  </span>
-                                                  <span>www.Twitter.com</span>
+                                             <div className="flex mt-2 flex-row items-center font-semibold">
+                                                  <Image
+                                                       src={Facebook}
+                                                       height={24}
+                                                       width={24}
+                                                  />
+                                                  <div>
+                                                       <a href="https://www.facebook.com/TwoStack2021">
+                                                            <span className="text-sm ml-3 text-gray-400 font-semibold">
+                                                                 Facebook
+                                                            </span>
+                                                       </a>
+                                                  </div>
                                              </div>
                                         </div>
                                    </div>
-                                   <div className="mt-5">
-                                        <span className="text-3xl text-text font-semibold">
-                                             I want to talk with(Direct mail):
-                                        </span>
-                                        <div className="mt-10">
-                                             <form>
-                                                  <div className="grid grid-cols-2 gap-5">
-                                                       <input
-                                                            type="text"
-                                                            className="bg-primary-200 focus:bg-primary-100 hover:border hover:border-2 hover:border-primary-300 focus:outline-none w-full px-3 py-2 rounded-md"
-                                                            placeholder="Your name"
-                                                       />
-                                                       <input
-                                                            type="email"
-                                                            className="bg-primary-200 focus:bg-primary-100 hover:border hover:border-2 hover:border-primary-300 focus:outline-none w-full px-3 py-2 rounded-md"
-                                                            placeholder="Your email"
-                                                       />
+                                   <div className="flex-1">
+                                        <div className="mapouter">
+                                             <div className="gmap_canvas">
+                                                  <div className="mapouter">
+                                                       <div className="gmap_canvas">
+                                                            <iframe
+                                                                 className="h-56 w-full"
+                                                                 id="gmap_canvas"
+                                                                 src="https://maps.google.com/maps?q=Devi%20park,sainsath%20nagar,%20nallasopara(E)%20-%20401209&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                                            ></iframe>
+                                                       </div>
                                                   </div>
-                                                  <div className="mt-5">
-                                                       <textarea
-                                                            name="message"
-                                                            placeholder="Enter your query / messages...."
-                                                            className="bg-primary-200 focus:bg-primary-100 hover:border hover:border-2 hover:border-primary-300 focus:outline-none w-full px-3 py-2 rounded-md resize-none"
-                                                            rows={5}
-                                                       ></textarea>
-                                                  </div>
-                                                  <div className="flex flex-row justify-end">
-                                                       <button className="bg-primary-500 p-2 rounded-md">
-                                                            <span className="text-white text-sm">
-                                                                 Send message
-                                                            </span>
-                                                       </button>
-                                                  </div>
-                                             </form>
+                                             </div>
                                         </div>
                                    </div>
                               </div>
