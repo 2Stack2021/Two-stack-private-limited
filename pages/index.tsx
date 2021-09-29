@@ -740,19 +740,10 @@ const Home: NextPage = () => {
                                         </div>
                                    </div>
                                    <div className="flex-1">
-                                        <div className="mapouter">
-                                             <div className="gmap_canvas">
-                                                  <div className="mapouter">
-                                                       <div className="gmap_canvas">
-                                                            <iframe
-                                                                 className="h-56 w-full"
-                                                                 id="gmap_canvas"
-                                                                 src="https://maps.google.com/maps?q=Devi%20park,sainsath%20nagar,%20nallasopara(E)%20-%20401209&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                                            ></iframe>
-                                                       </div>
-                                                  </div>
-                                             </div>
-                                        </div>
+                                        <iframe
+                                             className="h-56 w-full"
+                                             src="https://maps.google.com/maps?q=Devi%20park,sainsath%20nagar,%20nallasopara(E)%20-%20401209&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        ></iframe>
                                    </div>
                               </div>
                          </div>
